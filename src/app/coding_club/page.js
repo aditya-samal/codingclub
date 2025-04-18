@@ -33,25 +33,21 @@ export default function Pranked() {
           <div className="mb-6">
             <div className="text-6xl mb-4">🎉 😂 🎉</div>
             <p className="text-xl mb-4">
-              Congratulations! You&apos;ve passed &quot;The Impossible Login&quot; challenge!
+              Congratulations! You&apos;ve passed &quot;the &quot; test but it's of No Use!
             </p>
             <p className="text-lg mb-6">
-              Either you&apos;re a password genius or you have way too much time on your hands!
+             Apka kat Gya hai 🤣🤣 Koi Recruitment nhi mil rahi free mein 
             </p>
           </div>
           
           <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-6">
             <p className="text-yellow-700">
               This was a harmless prank page. No data was collected or stored.
+              Try in the coding week Again , not with luck but with hardwork
             </p>
           </div>
           
-          <Link
-            href="/"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline inline-block"
-          >
-            Try Again
-          </Link>
+          
         </div>
       )}
     </main>
