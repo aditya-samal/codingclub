@@ -33,7 +33,7 @@ export default function Pranked() {
           <div className="mb-6">
             <div className="text-6xl mb-4">🎉 😂 🎉</div>
             <p className="text-xl mb-4">
-              Congratulations! You&apos;ve passed &quot;the &quot; test but it&spos;s of No Use
+              Congratulations! You&apos;ve passed &quot;the &quot; test but it&apos;s of No Use
             </p>
             <p className="text-lg mb-6">
              Apka kat Gya hai 🤣🤣 Koi Recruitment nhi mil rahi free mein 
