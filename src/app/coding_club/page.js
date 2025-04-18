@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function Pranked() {
-  const [showPrank, setShowPrank] = useState(false);
-  
+  const [showPrank, setShowPrank] = useState(false);                   
+
   useEffect(() => {
     // Clear session storage
     sessionStorage.removeItem('username');
@@ -28,15 +28,15 @@ export default function Pranked() {
         </div>
       ) : (
         <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-2xl text-center">
-          <h1 className="text-4xl font-bold mb-6">YOU'VE BEEN PRANKED!</h1>
+          <h1 className="text-4xl font-bold mb-6">YOU&apos;VE BEEN PRANKED!</h1>
           
           <div className="mb-6">
             <div className="text-6xl mb-4">🎉 😂 🎉</div>
             <p className="text-xl mb-4">
-              Congratulations! You've passed "The Impossible Login" challenge!
+              Congratulations! You&apos;ve passed &quot;The Impossible Login&quot; challenge!
             </p>
             <p className="text-lg mb-6">
-              Either you're a password genius or you have way too much time on your hands!
+              Either you&apos;re a password genius or you have way too much time on your hands!
             </p>
           </div>
           

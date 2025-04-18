@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Step2Login() {
   const router = useRouter();
@@ -11,7 +12,6 @@ export default function Step2Login() {
   const [showHints, setShowHints] = useState(false);
   const [loaded, setLoaded] = useState(false);
   
-  // Step 2 requirements - Absurd requirements
   const [step2Requirements, setStep2Requirements] = useState([
     { text: "Include a word that rhymes with 'orange'", fulfilled: false, check: (pass) => {
       const rhymesWithOrange = ['sporange', 'borange', 'lorange', 'porange', 'storange', 'dorange', 'florange'];
@@ -66,14 +66,14 @@ export default function Step2Login() {
   }, [router]);
 
   useEffect(() => {
-    if (loaded) {
-      // Check all requirements and update their status
-      const updatedRequirements = step2Requirements.map(req => ({
+    if (!loaded) return;
+  
+    setStep2Requirements(prevRequirements =>
+      prevRequirements.map(req => ({
         ...req,
         fulfilled: req.check(password)
-      }));
-      setStep2Requirements(updatedRequirements);
-    }
+      }))
+    );
   }, [password, loaded]);
   
   const handleSubmit = (e) => {
@@ -147,7 +147,7 @@ export default function Step2Login() {
         <div className="text-center mb-8">
           <div className="flex justify-center mb-4">
           <div className="p-3 rounded-full bg-gray-700">
-              <img src="cc-logo.jpg" width={60} height={60} className="rounded-full" />
+              <Image src="cc-logo.jpg" width={60} height={60} alt="cc-logo" className="rounded-full" />
             </div>
           </div>
           <h1 className="text-3xl font-bold text-white mb-2">Advanced Security Check</h1>
