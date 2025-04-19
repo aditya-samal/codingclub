@@ -14,7 +14,14 @@ export default function Home() {
   };
 
   return (
-    <div className="flex justify-center items-center w-full min-h-screen bg-gradient-to-br from-purple-800 to-blue-500">
+    <div
+      className="flex text-gray-800 justify-center items-center w-full min-h-screen"
+      style={{
+        backgroundImage: "url('/bg.png')",
+        backgroundRepeat: "repeat",
+        backgroundColor: "#efede4",
+      }}
+    >
       {!showSignup ? (
         <IntroPage onGetStarted={() => setShowSignup(true)} />
       ) : (
