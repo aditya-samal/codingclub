@@ -8,7 +8,7 @@ export default function IntroPage({ onGetStarted }) {
         <span className="text-amber-700 font-bold">Coding Club</span>
       </h1>
       <p className="mb-6 text-gray-600">
-        Join our exclusive community of creative coders!
+        Join our exclusive community of creative coders !
       </p>
       <button
         onClick={onGetStarted}
